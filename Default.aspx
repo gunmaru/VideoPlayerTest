@@ -29,7 +29,7 @@
                <table>
                    <tr>
                     <td width="370px">
-                    <img src="img/Lec1.JPG" alt="" href="#" onclick="var win = window.open('http://localhost:7560/ShowPlayer.aspx?id=457558347','event','width=800px,height=800,toolbar=no,scrolling=auto,scrollbars=yes');win.focus();"  />
+                    <img src="img/Lec1.JPG" alt="" href="#" onclick="var win = window.open('http://localhost:7560/ShowPlayer.aspx?id=457558347','_blank','width=800px,height=800,toolbar=no,scrolling=auto,scrollbars=yes');win.focus();"  />
                     
                     </td>
                     <td width="370px">

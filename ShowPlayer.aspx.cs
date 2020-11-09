@@ -18,7 +18,8 @@ public partial class ShowPlayer : System.Web.UI.Page
 
     private void LoadData(string seq)
     {
-        movie.Text = "<iframe id=\"player1\"  src=\"https://player.vimeo.com/video/" + seq + "\"" + " style=\"position:absolute;top:0;left:0; width=\"800px\" height=\"554\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>";
+        //movie.Text = "<iframe id=\"player1\"  src=\"https://player.vimeo.com/video/" + seq + "\"" + " style=\"position:absolute;top:0;left:0; width=\"800px\" height=\"554\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>";
+        movie.Text = "<iframe id=\"player1\"  src=\"https://player.vimeo.com/video/" + seq + "\"" + " style=\"position:absolute;top:700;left:0; width=\"100%\" height=\"554\" frameborder=\"0\"  mozallowfullscreen allowfullscreen ></iframe>";
 
 
        

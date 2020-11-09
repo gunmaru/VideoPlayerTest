@@ -106,7 +106,6 @@
 
 
            
-
 </script>
 <%--<script type="text/javascript">
     $(window).bind('unload', function () {
@@ -185,7 +184,65 @@
 
 //    window.onunload = unloadPage;
 
+//    window.onbeforeunload = function () {
+//        return "저장되지 않은 변경사항이 있습니다. 정말 페이지를 떠나실 건 가요?";
+//    };
 
+//    function end() {
+
+//        alert("ddd");
+//    }
+
+//    var iframe = $('#player1')[0];
+//    iframe.onended = function () {
+//        alert("The video")
+//        end();
+//    };
+
+//    $(window).on("beforeunload", callback);
+
+//    function callback() {
+//        console.log("beforeunload callback !");
+//        //do something
+//        return "changes will be lost!";
+//    }
+
+</script>
+
+<script type="text/javascript">
+//    function myFunction() {
+//        return "Write something clever here...";
+//    }
+
+//    addEventListener('beforeunload', function (ev) {
+//        return ev.returnValue = 'My reason';
+    //    })
+    window.onbeforeunload = function (event) {
+        event.returnValue = "Write something clever here..";
+    };
+  
+
+
+</script>
+
+    <script  language="javascript">
+        function Exit() {
+            if (self.screenTop > 9000) {
+                alert('닫힘');
+            }
+            else {
+                if (document.readyState == "complete") {
+                    alert('새로고팀');
+                }
+                else if (document.readyState == "loading") {
+                alert('이동');
+                }
+            }
+        }
+    </script>
+
+<script language="javascript" event="onunload" for="widos">
+    Exit();
 </script>
 
 <script
@@ -197,7 +254,8 @@
 
 </head>
 <%--<body  onunload="Close_Event();" >
---%><body>
+--%>
+<body onbeforeunload="return myFunction()">
     <form id="form1" runat="server">
     <div>
         <table>
